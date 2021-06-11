@@ -1,0 +1,66 @@
+.team-section {
+  background-color: white;
+  padding: 101px 0;
+}
+
+.teamrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.teamrow-item {
+  max-width: 270px;
+}
+.teamrow-item__photo {
+  margin-bottom: 30px;
+}
+.teamrow-item__title {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 25px;
+  color: #2d3033;
+  margin-bottom: 16px;
+}
+.teamrow-item__subtitle {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+  color: #e84545;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+.teamrow-item__description {
+  margin-bottom: 31px;
+}
+.teamrow-item__description-p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #6c7279;
+}
+.teamrow-item__social-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+.teamrow-item__social-item {
+  width: 40px;
+  margin-right: 4px;
+  padding: 11px 0;
+  border: 1px solid #c6cacc;
+}
+.teamrow-item__social-item:last-child {
+  margin-right: 0;
+}
+.teamrow-item__social-fb, .teamrow-item__social-tw, .teamrow-item__social-lin {
+  color: #c6cacc;
+}

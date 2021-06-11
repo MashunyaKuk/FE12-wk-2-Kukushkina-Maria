@@ -1,0 +1,114 @@
+$font-white: #ffffff;
+$font-black: #2d3033;
+$font-grey: #6c7279;
+$font-greylight: #c6cacc;
+$font-red: #e84545;
+$ff-Raleway: 'Raleway', sans-serif;
+$ff-OpenSans: 'Open Sans', sans-serif;
+$ff-Cardo: 'Cardo', serif;
+
+
+.firstscreen-section {
+    background: url("../img/background-firstscreen.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    &::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-color: rgba($color:#2b2e4a, $alpha: 0.90);
+        top: 0;
+        left: 0;
+        position: absolute;
+    }
+}
+.firstscreen-container {
+    position: relative;
+    z-index: 1;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 38px 0 38px 0;
+}
+
+.header-logo {
+    &__link {
+        font-family: $ff-OpenSans;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 40px;
+        text-transform: uppercase;
+        color: $font-grey;
+        &::after {
+            content: 'Box';
+            text-transform: uppercase;
+            font-family: $ff-Raleway;
+            font-weight: 400;
+            display: inline-block;
+            color: $font-white;
+        }
+    }
+}
+
+.header-menu {
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__item {
+        margin-right: 70px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    &__link {
+        font-weight: 700;
+        font-size: 13px;
+        line-height: 15px;
+        color: $font-white;
+        text-transform: uppercase;
+    }
+}
+
+.firstscreen-textbox {
+    padding: 156px 128px 156px 128px;
+    text-align: center;
+    &__title {
+        font-family: $ff-OpenSans;
+        font-weight: 700;
+        color: $font-white;
+        font-size: 65px;
+        line-height: 71px;
+        text-align: center;
+        margin-bottom: 43px;
+        text-transform: uppercase;
+    }
+    &__description {
+        margin-bottom: 77px;
+        &-p {
+            text-align: center;
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 33px;
+            color: $font-white;
+        }
+    }
+    &__btn {
+        margin: auto;
+    }
+    &__btn-more {
+        background-color: $font-red;
+        padding: 18px 55px;
+        color: $font-white;
+        text-transform: uppercase;
+        border: none;
+        border-radius: 2px;
+        cursor: pointer;
+    }
+}

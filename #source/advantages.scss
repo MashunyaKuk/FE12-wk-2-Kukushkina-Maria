@@ -1,0 +1,41 @@
+$font-white: #ffffff;
+$font-black: #2d3033;
+$font-grey: #6c7279;
+$font-greylight: #c6cacc;
+$font-red: #e84545;
+$ff-Raleway: 'Raleway', sans-serif;
+$ff-OpenSans: 'Open Sans', sans-serif;
+$ff-Cardo: 'Cardo', serif;
+
+.advantages-section {
+    background-color: white;
+    padding: 122px 48px 47px 48px;
+}
+
+.advantagesrow {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    &-item {
+        max-width: 300px;
+        text-align: center;
+        margin-bottom: 75px;
+        &__img {
+            margin-bottom: 35px;
+        }
+        &__title {
+            margin-bottom: 26px;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 17px;
+            text-transform: uppercase;
+            color: $font-black;
+        }
+        &__description-p {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 21px;
+            color: $font-grey;
+        }
+    }
+}

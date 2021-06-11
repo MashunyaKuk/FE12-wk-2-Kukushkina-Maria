@@ -1,0 +1,23 @@
+.footer {
+  background-color: #313454;
+  padding: 30px 0;
+}
+.footer-text {
+  text-align: center;
+}
+.footer-text__p {
+  font-weight: 400;
+  color: #6c7279;
+  font-size: 16px;
+  line-height: 22.5px;
+}
+.footer-text__heart {
+  color: red;
+  font-size: 18px;
+}
+.footer-text__made::after {
+  content: "by Kamal Chaneman";
+  color: #ffffff;
+  display: inline-block;
+  margin-left: 3px;
+}

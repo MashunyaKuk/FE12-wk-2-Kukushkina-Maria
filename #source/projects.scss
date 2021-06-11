@@ -1,0 +1,74 @@
+$font-white: #ffffff;
+$font-black: #2d3033;
+$font-grey: #6c7279;
+$font-greylight: #c6cacc;
+$font-red: #e84545;
+$ff-Raleway: 'Raleway', sans-serif;
+$ff-OpenSans: 'Open Sans', sans-serif;
+$ff-Cardo: 'Cardo', serif;
+
+.projects-section {
+    background-color: white;
+}
+
+.projectsrow {
+    margin-bottom: 1px;
+    &:last-child {
+        margin-bottom: 0;
+    }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &-item {
+        width: 465px;
+        margin-right: 1px;
+        &:last-child, &:nth-child(4) {
+            margin-right: 0;
+        }
+        overflow: hidden;
+        padding: 0 0 15% 0;
+        position: relative;
+        &__image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        /*блок для текста и фона при hover*/
+        &__hover{
+            background-color: rgba($color: $font-red, $alpha: 0.90);
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            visibility: hidden;
+            opacity: 0;
+            &-title {
+                font-weight: 700;
+                font-size: 12px;
+                line-height: 14px;
+                color: $font-white;
+                text-transform: uppercase;
+                margin-bottom: 10px;
+            }
+            &-description-p {
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 14px;
+                color: $font-white;
+            }
+        }
+    }
+}
+/*hover для текста и фона при hover*/
+.projectsrow-item:hover .projectsrow-item__hover {
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.5s ease;
+}

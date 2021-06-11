@@ -1,0 +1,66 @@
+$font-white: #ffffff;
+$font-black: #2d3033;
+$font-grey: #6c7279;
+$font-greylight: #c6cacc;
+$font-red: #e84545;
+$ff-Raleway: 'Raleway', sans-serif;
+$ff-OpenSans: 'Open Sans', sans-serif;
+$ff-Cardo: 'Cardo', serif;
+
+.team-section {
+    background-color: white;
+    padding: 101px 0;
+}
+
+.teamrow {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    &-item {
+        max-width: 270px;
+        &__photo {
+            margin-bottom: 30px;
+        }
+        &__title {
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 25px;
+            color: $font-black;
+            margin-bottom: 16px;
+        }
+        &__subtitle {
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 15px;
+            color: $font-red;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+        }
+        &__description {
+            margin-bottom: 31px;
+        }
+        &__description-p {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 21px;
+            color: $font-grey;
+        }
+        &__social-list {
+            display: flex;
+            align-items: center;
+            text-align: center;
+        }
+        &__social-item {
+            width: 40px;
+            margin-right: 4px;
+            &:last-child {
+                margin-right: 0;
+            }
+            padding: 11px 0;
+            border: 1px solid $font-greylight;
+        }
+        &__social-fb, &__social-tw, &__social-lin {
+            color: $font-greylight;
+        }   
+    } 
+}
