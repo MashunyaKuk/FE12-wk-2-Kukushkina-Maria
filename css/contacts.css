@@ -2,6 +2,16 @@
   background-color: #3a3e64;
   padding: 71px 0 88px 0;
 }
+@media (max-width: 767px) {
+  .contacts-section {
+    padding: 41px 0 48px 0;
+  }
+}
+@media (max-width: 480px) {
+  .contacts-section {
+    padding: 21px 0 28px 0;
+  }
+}
 
 .contactsrow {
   display: -webkit-box;
@@ -12,25 +22,56 @@
           justify-content: space-between;
   margin: 0 -15px;
 }
+@media (max-width: 480px) {
+  .contactsrow {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
 .contactsrow-item {
   width: 330px;
   text-align: center;
   margin: 0 15px;
 }
+@media (max-width: 480px) {
+  .contactsrow-item {
+    margin-bottom: 25px;
+  }
+  .contactsrow-item:last-child {
+    margin-bottom: 0;
+  }
+}
 .contactsrow-item__title {
   font-weight: 700;
-  font-size: 14px;
+  font-size: 1rem;
   line-height: 16px;
   color: #ffffff;
   text-transform: uppercase;
   margin-bottom: 22px;
 }
+@media (max-width: 767px) {
+  .contactsrow-item__title {
+    font-size: 1.2rem;
+    margin-bottom: 18px;
+  }
+}
 .contactsrow-item__textbox-p {
   font-weight: 400;
-  font-size: 14px;
+  font-size: 1rem;
   line-height: 22.5px;
   color: rgba(255, 255, 255, 0.5);
   margin: 0 15px;
+}
+@media (max-width: 767px) {
+  .contactsrow-item__textbox-p {
+    font-size: 1.2rem;
+    line-height: 18px;
+  }
 }
 .contactsrow-item__list {
   display: -webkit-box;
@@ -44,13 +85,22 @@
           justify-content: center;
 }
 .contactsrow-item__list-item {
-  width: 40px;
-  padding: 11px 0;
-  border: 2px solid #ffffff;
   margin-right: 7px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.contactsrow-item__list-item:hover {
+  -webkit-transform: scale(1.2, 1.2);
+          transform: scale(1.2, 1.2);
 }
 .contactsrow-item__list-item-p {
   color: #ffffff;
+  padding: 11px 11px;
+  border: 2px solid #ffffff;
+  font-size: 1.5rem;
+}
+.contactsrow-item__list-item-p:hover {
+  background-color: #6c7279;
 }
 .contactsrow-item__list-item:last-child {
   margin-right: 0;

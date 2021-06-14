@@ -1,8 +1,10 @@
+@charset "UTF-8";
 .projects-section {
   background-color: white;
 }
 
 .projectsrow {
+  margin-bottom: 1px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -12,4 +14,120 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+.projectsrow:last-child {
+  margin-bottom: 0;
+}
+@media (max-width: 992px) {
+  .projectsrow {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+.projectsrow-item {
+  width: 465px;
+  margin-right: 1px;
+  overflow: hidden;
+  padding: 0 0 15% 0;
+  position: relative;
+  /*блок для текста и фона при hover*/
+}
+.projectsrow-item:last-child, .projectsrow-item:nth-child(4) {
+  margin-right: 0;
+}
+@media (max-width: 992px) {
+  .projectsrow-item {
+    width: 365px;
+    padding: 0 0 25% 0;
+    margin: 0 10px 10px 0;
+  }
+  .projectsrow-item:nth-child(2) {
+    margin-right: 0;
+  }
+  .projectsrow-item:nth-child(3) {
+    margin-bottom: 0;
+  }
+  .projectsrow-item:nth-child(4) {
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 767px) {
+  .projectsrow-item {
+    width: 295px;
+  }
+}
+@media (max-width: 600px) {
+  .projectsrow-item {
+    width: 235px;
+  }
+}
+@media (max-width: 480px) {
+  .projectsrow-item {
+    width: 310px;
+    padding: 0 0 35% 0;
+    margin-right: 0;
+  }
+  .projectsrow-item:nth-child(3) {
+    margin-bottom: 10px;
+  }
+}
+.projectsrow-item__image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.projectsrow-item__hover {
+  background-color: rgba(232, 69, 69, 0.9);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  visibility: hidden;
+  opacity: 0;
+}
+.projectsrow-item__hover-title {
+  font-weight: 700;
+  font-size: 0.86rem;
+  line-height: 14px;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.projectsrow-item__hover-description-p {
+  font-weight: 400;
+  font-size: 0.86rem;
+  line-height: 14px;
+  color: #ffffff;
+}
+
+@media (max-width: 992px) {
+  .projectsrow-second {
+    display: none;
+  }
+}
+
+/*hover для текста и фона при hover*/
+.projectsrow-item:hover .projectsrow-item__hover {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }

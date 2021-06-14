@@ -18,6 +18,15 @@ $ff-Cardo: 'Cardo', serif;
 html {
     font-family: $ff-Raleway;
     font-size: 14px;
+    @media (max-width: 1200px) {
+        font-size: 13px;
+    }
+    @media (max-width: 992px) {
+        font-size: 11px;
+    }
+    @media (max-width: 767px) {
+        font-size: 9px;
+    }
 }
 
 .container {

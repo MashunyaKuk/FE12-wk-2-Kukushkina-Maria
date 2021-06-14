@@ -1,4 +1,155 @@
+@charset "UTF-8";
 .reviewsrow {
+  position: relative;
+  min-width: 0;
+}
+.reviewsrow-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  height: 500px;
+  background-color: #53354a;
+}
+@media (max-width: 480px) {
+  .reviewsrow-item {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    height: 500px;
+  }
+}
+.reviewsrow-item__text {
+  padding: 0 115px 0 85px;
+  width: 900px;
+}
+@media (max-width: 767px) {
+  .reviewsrow-item__text {
+    padding: 0 45px 0 45px;
+  }
+}
+@media (max-width: 480px) {
+  .reviewsrow-item__text {
+    padding: 0 80px 0 80px;
+  }
+}
+@media (max-width: 310px) {
+  .reviewsrow-item__text {
+    padding: 0 20px 0 20px;
+  }
+}
+@media (max-width: 480px) {
+  .reviewsrow-item__image {
+    margin-top: -40px;
+  }
+}
+.reviewsrow-item__img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: right;
+     object-position: right;
+}
+@media (max-width: 992px) {
+  .reviewsrow-item__img {
+    -o-object-position: 70% 50%;
+       object-position: 70% 50%;
+  }
+}
+@media (max-width: 480px) {
+  .reviewsrow-item__img {
+    height: 50%;
+    -o-object-position: 100% 50%;
+       object-position: 100% 50%;
+  }
+}
+.reviewsrow-item__review {
+  font-family: "Cardo", serif;
+  font-size: 2.57rem;
+  line-height: 42px;
+  margin-bottom: 30px;
+  color: #ffffff;
+}
+@media (max-width: 480px) {
+  .reviewsrow-item__review {
+    font-size: 2.07rem;
+    margin-bottom: 20px;
+    line-height: 25px;
+  }
+}
+.reviewsrow-item__author {
+  font-weight: 700;
+  font-size: 0.93rem;
+  line-height: 21px;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-bottom: 65px;
+}
+@media (max-width: 480px) {
+  .reviewsrow-item__author {
+    margin-bottom: 20px;
+  }
+}
+
+/* Ограничивающая оболочка */
+.slick-list {
+  overflow: hidden;
+}
+
+/* Лента слайдов */
+.slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+/* Стрелка */
+.slick-arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  font-size: 0;
+  width: 50px;
+  height: 70px;
+  border: none;
+  cursor: pointer;
+}
+@media (max-width: 310px) {
+  .slick-arrow {
+    display: none;
+  }
+}
+
+/* Стрелка неактивности*/
+.slick-arrow.slick-disabled {
+  opacity: 0.2;
+}
+
+/* Стрелка влево */
+.slick-arrow.slick-prev {
+  left: 0;
+  background: url(../img/icons/prev.png) 0 0/100% no-repeat;
+  margin-left: 5%;
+}
+
+/* Стрелка вправо */
+.slick-arrow.slick-next {
+  right: 0;
+  background: url(../img/icons/next.png) 0 0/100% no-repeat;
+  margin-right: 5%;
+}
+
+/* Точки (булиты) */
+.slick-dots {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -8,4 +159,25 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.slick-dots li {
+  list-style: none;
+  margin: 0 10px;
+}
+
+/* Элемент точки */
+.slick-dots li button {
+  font-size: 0;
+  width: 10px;
+  height: 10px;
+  background-color: rgba(255, 255, 255, 0.534);
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+
+/* Активная точка */
+.slick-dots li.slick-active button {
+  background-color: white;
 }

@@ -9,7 +9,10 @@ $ff-Cardo: 'Cardo', serif;
 
 .download-section {
     background-color: white;
-    padding: 100px 0;
+    padding: 100px 15px;
+    @media (max-width: 767px) {
+        padding: 50px 15px;
+    }
 }
 
 .download-container {
@@ -19,19 +22,25 @@ $ff-Cardo: 'Cardo', serif;
 .download-title {
     font-weight: 300;
     color: $font-black;
-    font-size: 28px;
+    font-size: 2rem;
     line-height: 21px;
     margin-bottom: 17px;
 }
 
 .download-subtitle {
     margin-bottom: 40px;
+    @media (max-width: 767px) {
+        margin-bottom: 20px;
+    }
     &-p {
         font-weight: 700;
-        font-size: 13px;
+        font-size: 0.93rem;
         line-height: 31px;
         color: $font-black;
         text-transform: uppercase;
+        @media (max-width: 767px) {
+            font-size: 1.1rem;
+        }
     }
 }
 .download-btn {
@@ -41,10 +50,19 @@ $ff-Cardo: 'Cardo', serif;
         border: none;
         border-radius: 2px;
         font-weight: 600;
-        font-size: 13px;
+        font-size: 0.93rem;
         line-height: 21px;
         text-transform: uppercase;
         color: $font-white;
         cursor: pointer;
+        transition: 0.4s;
+        &:hover {
+            transform: scale(1.2, 1.2);
+            box-shadow: 5px 5px 5px 5px $font-greylight;
+        }
+        @media (max-width: 767px) {
+            padding: 13px 53px;
+            font-size: 1.1rem;
+        }
     }
 }

@@ -9,33 +9,69 @@ $ff-Cardo: 'Cardo', serif;
 
 .advantages-section {
     background-color: white;
-    padding: 122px 48px 47px 48px;
+    padding: 122px 45px 47px 45px;
+    @media (max-width: 992px) {
+        padding: 72px 45px 27px 45px;
+    }
+    @media (max-width: 480px) {
+        padding: 42px 45px 27px 45px;
+    }
 }
 
 .advantagesrow {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    @media (max-width: 840px) {
+        justify-content: space-around;
+    }
     &-item {
         max-width: 300px;
         text-align: center;
         margin-bottom: 75px;
+        @media (max-width: 992px) {
+            max-width: 250px;
+        }
+        @media (max-width: 840px) {
+            max-width: 330px;
+        }
+        @media (max-width: 767px) {
+            max-width: 300px;
+        }
+        @media (max-width: 690px) {
+            max-width: 190px;
+        }
+        @media (max-width: 480px) {
+            max-width: 390px;
+            margin-bottom: 25px;
+        }
         &__img {
             margin-bottom: 35px;
+            transition: 0.4s;
+            &:hover {
+                transform: scale(1.2, 1.2);
+            }
         }
         &__title {
             margin-bottom: 26px;
             font-weight: 700;
-            font-size: 14px;
+            font-size: 1rem;
             line-height: 17px;
             text-transform: uppercase;
             color: $font-black;
+            @media (max-width: 767px) {
+                font-size: 1.3rem;
+            }
         }
         &__description-p {
             font-weight: 400;
-            font-size: 14px;
+            font-size: 1rem;
             line-height: 21px;
             color: $font-grey;
+            @media (max-width: 767px) {
+                font-size: 1.3rem;
+                line-height: 17px
+            }
         }
     }
 }
