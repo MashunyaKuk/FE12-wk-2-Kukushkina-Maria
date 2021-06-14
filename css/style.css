@@ -68,7 +68,7 @@ html {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding: 38px 0;
-  margin: 0 -15px;
+  border-bottom: 2px solid #6c7279;
 }
 @media (max-width: 767px) {
   .header {
@@ -84,7 +84,6 @@ html {
   line-height: 40px;
   text-transform: uppercase;
   color: #6c7279;
-  margin: 0 15px;
 }
 .header-logo__link::after {
   content: "Box";
@@ -143,27 +142,30 @@ html {
 }
 
 .firstscreen-textbox {
-  padding: 128px;
+  max-width: 918px;
+  margin: auto;
+  padding-top: 100px;
   text-align: center;
 }
 @media (max-width: 1200px) {
   .firstscreen-textbox {
-    padding: 88px;
+    width: 858px;
   }
 }
 @media (max-width: 992px) {
   .firstscreen-textbox {
-    padding: 58px;
+    width: 738px;
   }
 }
 @media (max-width: 767px) {
   .firstscreen-textbox {
-    padding: 53px;
+    width: 438px;
   }
 }
 @media (max-width: 480px) {
   .firstscreen-textbox {
-    padding: 30px;
+    width: 288px;
+    padding-top: 70px;
   }
 }
 .firstscreen-textbox__title {
@@ -172,7 +174,6 @@ html {
   color: #ffffff;
   font-size: 4.64rem;
   line-height: 71px;
-  text-align: center;
   margin-bottom: 43px;
   text-transform: uppercase;
 }
@@ -198,14 +199,10 @@ html {
   margin-bottom: 57px;
 }
 .firstscreen-textbox__description-p {
-  text-align: center;
   font-weight: 400;
   font-size: 1.57rem;
   line-height: 33px;
   color: #ffffff;
-}
-.firstscreen-textbox__btn {
-  margin: auto;
 }
 .firstscreen-textbox__btn-more {
   background-color: #e84545;
@@ -482,6 +479,7 @@ html {
   margin-right: 4px;
   -webkit-transition: 0.4s;
   transition: 0.4s;
+  padding: 15px 0;
 }
 .teamrow-item__social-item:hover {
   -webkit-transform: scale(1.2, 1.2);
@@ -908,7 +906,6 @@ html {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 0 -15px;
 }
 @media (max-width: 480px) {
   .contactsrow {
@@ -924,7 +921,6 @@ html {
 .contactsrow-item {
   width: 330px;
   text-align: center;
-  margin: 0 15px;
 }
 @media (max-width: 480px) {
   .contactsrow-item {
@@ -976,6 +972,7 @@ html {
   margin-right: 7px;
   -webkit-transition: 0.4s;
   transition: 0.4s;
+  padding: 15px 0;
 }
 .contactsrow-item__list-item:hover {
   -webkit-transform: scale(1.2, 1.2);

@@ -153,6 +153,7 @@
   margin-right: 4px;
   -webkit-transition: 0.4s;
   transition: 0.4s;
+  padding: 15px 0;
 }
 .teamrow-item__social-item:hover {
   -webkit-transform: scale(1.2, 1.2);

@@ -43,8 +43,7 @@ $ff-Cardo: 'Cardo', serif;
         }
     }
 }
-.download-btn {
-    &__button {
+.download-btn__button {
         background-color: $font-red;
         padding: 18px 83px;
         border: none;
@@ -65,4 +64,3 @@ $ff-Cardo: 'Cardo', serif;
             font-size: 1.1rem;
         }
     }
-}

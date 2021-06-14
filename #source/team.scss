@@ -115,6 +115,7 @@ $ff-Cardo: 'Cardo', serif;
         &__social-item {
             margin-right: 4px;
             transition: 0.4s;
+            padding: 15px 0;
             &:hover {
                 transform: scale(1.2, 1.2);
             }
